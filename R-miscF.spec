@@ -4,7 +4,7 @@
 #
 Name     : R-miscF
 Version  : 0.1.4
-Release  : 3
+Release  : 4
 URL      : https://cran.r-project.org/src/contrib/miscF_0.1-4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/miscF_0.1-4.tar.gz
 Summary  : Miscellaneous Functions
@@ -13,10 +13,7 @@ License  : GPL-2.0
 Requires: R-miscF-lib = %{version}-%{release}
 Requires: R-MCMCpack
 Requires: R-R2jags
-Requires: R-Rcpp
-Requires: R-mcmc
 Requires: R-mvtnorm
-Requires: R-quantreg
 BuildRequires : R-MCMCpack
 BuildRequires : R-R2jags
 BuildRequires : R-Rcpp
@@ -24,6 +21,7 @@ BuildRequires : R-mcmc
 BuildRequires : R-mvtnorm
 BuildRequires : R-quantreg
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 estimation, classification, curve fitting, and spatial 
@@ -45,10 +43,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1562093786
+export SOURCE_DATE_EPOCH=1571866520
 
 %install
-export SOURCE_DATE_EPOCH=1562093786
+export SOURCE_DATE_EPOCH=1571866520
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
