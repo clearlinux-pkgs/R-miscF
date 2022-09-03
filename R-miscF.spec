@@ -4,7 +4,7 @@
 #
 Name     : R-miscF
 Version  : 0.1.5
-Release  : 25
+Release  : 26
 URL      : https://cran.r-project.org/src/contrib/miscF_0.1-5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/miscF_0.1-5.tar.gz
 Summary  : Miscellaneous Functions
